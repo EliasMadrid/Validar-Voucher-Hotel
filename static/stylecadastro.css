@@ -1,0 +1,156 @@
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #c8c5c5;
+    padding: 5px;
+}
+
+.logo img {
+    max-width: 100%;
+    max-height: 40px;
+    height: auto;
+    padding: 10px;
+}
+
+.menu {
+    overflow: hidden;
+}
+
+.menu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+.menu li {
+    float: left;
+    position: relative;
+}
+
+.menu a {
+    display: block;
+    color: rgb(107, 11, 11);
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+.menu a:hover {
+    background-color: #ffff;
+}
+
+/* Estilizando submenus */
+.menu ul ul {
+    display: none;
+    position: absolute;
+    top: 100%;
+    left: 0;
+    background-color: #c8c5c5;
+    border-radius: 0 0 8px 8px;
+    z-index: 1;
+}
+
+.menu li:hover > ul {
+    display: block;
+}
+
+/* Ajuste para os submenus não se sobrepoorem aos outros itens */
+.menu ul ul li {
+    clear: both;
+}
+
+.container {
+    flex: 2;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 0 25px rgba(0, 0, 0, 0.1);
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+}
+
+label {
+    margin-bottom: 8px;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 15px;
+    width: 90%;
+}
+
+button {
+    padding: 10px;
+    background-color: #7b0606;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #0056b3;
+}
+
+.footer {
+    background-color: #7b0606;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    margin-top: auto;
+    width: 100%;
+    font-size: 12px;
+}
+/* Adicione este código ao seu arquivo de estilo (stylecadastro.css) ou no cabeçalho HTML dentro de uma tag <style> */
+
+/* Estilo básico para o select */
+select {
+    padding: 8px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  /* Estilo quando o select está focado */
+  select:focus {
+    border-color: #007BFF;
+    outline: none;
+  }
+  
+  /* Estilo para a seta do select */
+  select::-ms-expand {
+    display: none;
+  }
+  
+  /* Estilo para o ícone de seta personalizado (pode ser substituído por um ícone real) */
+  select {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    background-image: url('path/to/arrow-icon.png'); /* Substitua 'path/to/arrow-icon.png' pelo caminho do seu ícone de seta */
+    background-position: right center;
+    background-repeat: no-repeat;
+    padding-right: 30px; /* Ajuste conforme necessário para o ícone */
+  }
+  
+  /* Estilo para a opção selecionada no select */
+  select option:checked {
+    background-color: #007BFF;
+    color: #fff;
+  }
+  
